@@ -1,0 +1,18 @@
+{
+  "slug": "docs-qa",
+  "title": "Docs Q&A",
+  "tagline": "Answers questions about any product by reading its llms.txt / agents.md.",
+  "description": "A documentation concierge. Give it a product or site and a question; it discovers the site's agent-readable surfaces (llms.txt, agents.md, sitemap), reads the relevant ones, and answers strictly from what it fetched — with source citations. Refuses to fabricate.",
+  "category": "docs-knowledge",
+  "categoryLabel": "Docs & Knowledge",
+  "channels": ["http", "web", "slack"],
+  "stack": ["ai-sdk", "ai-gateway"],
+  "eveFeatures": ["tools", "skills"],
+  "tags": ["llms.txt", "agents.md", "documentation", "rag", "citations"],
+  "model": "anthropic/claude-sonnet-4.6",
+  "difficulty": "starter",
+  "path": "templates/docs-qa",
+  "featured": true,
+  "test": "npx eve dev, then ask: \"What does eve.dev say about defining tools?\"",
+  "requires": ["AI Gateway access (Vercel) or an Anthropic API key"]
+}
